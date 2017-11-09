@@ -1,0 +1,12 @@
+#cloud-config
+timezone: America/Toronto
+hostname: debconf17
+apt:
+  sources:
+    lxc:
+      source: "ppa:ubuntu-lxc/stable"
+packages:
+  - htop
+  - tree
+package_update: true
+package_upgrade: true
